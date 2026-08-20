@@ -8,6 +8,7 @@ import model_paths
 xsdict = joblib.load(model_paths.__path_xs_pickle__)
 fabulist = np.array([ 0. ,  0.1,  0.5,  1. ,  2. ,  4. ,  6. ,  8. , 10. , 12.5, 15. , 17.5, 20. , 25. , 30. , 35. , 40. , 45. , 50. , 55. , 60. , 65. , 70. , 75. , 80. ]) # list of depeltion steps used in xs generation
 faaxial = np.array([15.24, 10.16,  5.08, 30.48, 30.48, 30.48, 30.48, 30.48, 30.48, 30.48, 30.48, 30.48, 30.48,  5.08, 10.16, 15.24])
+corebulist =  [0.1, 0.4, 0.5, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
 total_height = np.sum(faaxial)
 idx11 = [0]
 idx22 = [1,2,3,4,5,6,7,9,18,27,36,45,54,63]
@@ -41,7 +42,6 @@ class initialize():
 
 parser = initialize.Parse_Args()
 input_data = input_parser.__init__(parser.input)
-corebulist = input_data['depletion_steps']
 LPs = input_parser.construct_quarter_core(input_data['loading_pattern'])
 init_worker_updated()
 Fd_all, Fq_all, maxboron, cycle_length = get_result_157(LPs, corebulist, xsdict, fabulist, faaxial, total_height, idx11, idx22, initbumap)
