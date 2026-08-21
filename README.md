@@ -1,14 +1,20 @@
 # DeepOPWR
 
-# For using surrogate models in MIDAS, please follow below steps:
+# Installation Instructions on NCSU's HAZEL hpc
 
 ## 1. Create a Conda Environment
 
-Create a Conda environment with Python 3.11:
+To install DeepOPWR, users will need to create a conda environment in their personal directories in the 'supplemental group storage'.
+This is located at '/usr/local/usrapps/ardor/unityid/' where the unityid is your personal unity ID. If this directory does not already 
+exist, then you can navigate to '/usr/local/usrapps/ardor/' and create a directory named after your unity ID. 
+
+for all future commands using the 'supplemental group storage' file path, you will need to replace 'unityid' with your personal unity ID.
+
+Once the directory is created, you will need to create a conda environment with python3.11:
 
 ```bash
-conda create -n myenv python=3.11.14
-conda activate myenv
+conda create --prefix /usr/local/usrapps/ardor/unityid/deepopwr_env -c conda-forge python=3.11.14
+conda activate /usr/local/usrapps/ardor/rjmikouc/deepopwr_env
 ```
 
 ## 2. Install DeepXDE
