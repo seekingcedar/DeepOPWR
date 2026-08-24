@@ -29,16 +29,16 @@ mkdir NE512_project
 cd ./NE512_project
 ```
 
-## 3. Clone this Repository
+## 3. Clone the DeepOPWR Repository
 
 In the designated directory, clone the following repository:
 
 ```bash
-git clone https://github.com/nhnkkhang/DeepOnet-Nuclear.git
+git clone https://github.com/JakeMikouchi/DeepOPWR.git
 ```
 
-Replace the contents of the installed `deepxde` package directory with the files from the cloned repository.
-
+A folder should appear in the designated directory named DeepOPWR. This folder contains the entire model but additional
+steps are needed in order to run the model.
 
 ## 2. Install DeepXDE
 
@@ -63,9 +63,9 @@ Replace the contents of the installed `deepxde` package directory with the files
 cp -rf /gpfs_common/share02/ardor/unityid/NE512_project/DeepOnet-Nuclear/* /usr/local/usrapps/ardor/unityid/deepopwr_env/lib/python3.11/site-packages/deepxde/
 ```
 
-## 4. Install Required Package Versions
+## 4. Install Required Package
 
-Run the following command to install the following package:
+Run the following command to install the required package with the correct version:
 
 ```bash
 python -m pip install TensorFlow==2.15.0
