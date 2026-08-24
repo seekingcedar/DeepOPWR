@@ -99,6 +99,10 @@ To run the model, enter the following command into the command line:
 ```bash
 python3 run_model.py --input case.yaml 
 ```
+
+Running the model will create an output file named 'core_output.txt' This file will echo the loading pattern used in the prediction and give its 
+performance parameters. Be aware that running the code again will replace the old contents of the output file.
+
 When running the model, please do so through an interactive session on the hpc.
 
 
