@@ -1,5 +1,3 @@
-# DeepOPWR
-
 # Installation Instructions on NCSU's HAZEL hpc
 
 ## 1. Create a Conda Environment
@@ -80,6 +78,28 @@ the correct paths for your system. To do this, replace any instance of the strin
 ```text
 /home/rjmikouc/scratch_dir/deeponet_midas/Solo_model/ --> /gpfs_common/share02/ardor/unityid/deeponet_midas/DeepOPWR/
 ```
+
+Congratulations, you are now ready to use the DeepOPWR model.
+
+
+# Running The Code
+
+## 1. Create Your Loading Pattern
+
+In the DeepOPWR directory, there is a file named case.yaml. This file acts as the input to DeepOPWR and is where you will define your loading pattern.  
+A simple loading pattern already exists within the file. Notice that the existing loading pattern is in the quarter core configuration, DeepOPWR can 
+only accept quarter core loading patterns so please do not alter the current shape of the input (including the number of elements in the pattern). 
+To change the loading pattern, you can change the assembly definition at any valid location. Available assembly definitions are '201', '251', '252', 
+'321', '322' as defined in your project assignment. Assembly locations that are designated as '10' are reflector locations, and assembly locations 
+designated as '00' are void locations DO NOT CHANGE ANY REFLECTORS OR VOIDs IN THE INPUT. 
+
+## 2. Run The Model
+To run the model, enter the following command into the command line: 
+
+```bash
+python3 run_model.py --input case.yaml 
+```
+When running the model, please do so through an interactive session on the hpc.
 
 
 
