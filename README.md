@@ -89,7 +89,7 @@ Congratulations, you are now ready to use the DeepOPWR model.
 In the DeepOPWR directory, there is a file named case.yaml. This file acts as the input to DeepOPWR and is where you will define your loading pattern.  
 A simple loading pattern already exists within the file. Notice that the existing loading pattern is in the quarter core configuration, DeepOPWR can 
 only accept quarter core loading patterns so please do not alter the current shape of the input (including the number of elements in the pattern). 
-To change the loading pattern, you can change the assembly definition at any valid location. Available assembly definitions are '201', '251', '252', 
+To update the loading pattern, you can change the assembly definition at any valid location. Available assembly definitions are '201', '251', '252', 
 '321', '322' as defined in your project assignment. Assembly locations that are designated as '10' are reflector locations, and assembly locations 
 designated as '00' are void locations DO NOT CHANGE ANY REFLECTORS OR VOIDs IN THE INPUT. 
 
