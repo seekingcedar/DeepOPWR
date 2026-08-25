@@ -38,7 +38,7 @@ git clone https://github.com/JakeMikouchi/DeepOPWR.git
 A folder should appear in the designated directory named DeepOPWR. This folder contains the entire model but additional
 steps are needed in order to run the model.
 
-## 2. Install DeepXDE
+## 4. Install DeepXDE
 
 The next step is to install the required version of DeepXDE. You may need to install pip before installing DeepXDE:
 
@@ -47,7 +47,7 @@ conda install pip
 pip install deepxde==1.14.0
 ```
 
-## 3. Replace the DeepXDE Package Contents
+## 5. Replace the DeepXDE Package Contents
 
 Clone the following repository:
 
@@ -61,7 +61,7 @@ Replace the contents of the installed `deepxde` package directory with the files
 cp -rf /gpfs_common/share02/ardor/unityid/NE512_project/DeepOnet-Nuclear/* /usr/local/usrapps/ardor/unityid/deepopwr_env/lib/python3.11/site-packages/deepxde/
 ```
 
-## 4. Install Required Package
+## 6. Install Required Package
 
 Run the following command to install the required package with the correct version:
 
@@ -69,7 +69,7 @@ Run the following command to install the required package with the correct versi
 python -m pip install TensorFlow==2.15.0
 ```
 
-## 5. Update Absolute Paths
+## 7. Update Absolute Paths
 
 In the DeepOPWR folder, open the file named `model_paths.py`, you will need to update the update the absolute paths used for DeepONet with 
 the correct paths for your system. To do this, replace any instance of the string /home/rjmikouc/scratch_dir/deeponet_midas/Solo_model/ with 
