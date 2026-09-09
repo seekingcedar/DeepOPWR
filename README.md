@@ -73,10 +73,10 @@ python -m pip install TensorFlow==2.15.0
 
 In the DeepOPWR folder, open the file named `model_paths.py`, you will need to update the update the absolute paths used for DeepONet with 
 the correct paths for your system. To do this, replace any instance of the string /home/rjmikouc/scratch_dir/deeponet_midas/Solo_model/ with 
-/gpfs_common/share02/ardor/unityid/deeponet_midas/DeepOPWR/
+/gpfs_common/share02/ardor/unityid/NE512_project/DeepOPWR/
 
 ```text
-/home/rjmikouc/scratch_dir/deeponet_midas/Solo_model/ --> /gpfs_common/share02/ardor/unityid/deeponet_midas/DeepOPWR/
+/home/rjmikouc/scratch_dir/deeponet_midas/Solo_model/ --> /gpfs_common/share02/ardor/unityid/NE512_project/DeepOPWR/
 ```
 
 Congratulations, you are now ready to use the DeepOPWR model.
