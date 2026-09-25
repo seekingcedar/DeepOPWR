@@ -49,7 +49,7 @@ Fd_all, Fq_all, maxboron, cycle_length = get_result_157(LPs, corebulist, xsdict,
 print("Prediction Complete")
 
 with open("core_output.txt", "w") as f:
-    f.write("-Core Perfromance Prediction Complete-\n")
+    f.write("-Core Performance Prediction Complete-\n")
     f.write("\n")
     f.write("Core: \n")
     f.write(f"   {LPs[0]}\n")
@@ -58,7 +58,7 @@ with open("core_output.txt", "w") as f:
         f.write(" ".join(f"{str(x):>6}" for x in row) + "\n")
     f.write("\n")
     f.write("\n")
-    f.write("Perfromance Parameters:  \n")
+    f.write("Performance Parameters:  \n")
     f.write(f"Max Enthalpy Rise Peaking Factor: {round(float(Fd_all),3)}\n")
     f.write(f"Max Pin Power Peaking Factor: {round(float(Fq_all),3)}\n")
     f.write(f"Max Critical Boron Concentration (ppm): {round(float(maxboron),3)}\n")
